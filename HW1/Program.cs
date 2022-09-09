@@ -9,7 +9,8 @@ string Print(int max,int min)
 {
 string s = "";
 if (max == min-1) return s;
-return (Print(max-1, min)+max).ToString();
+return (Print(max-1, min)+max+" ").ToString();
 }
 
 Console.WriteLine(Print(N2, N1));
+
